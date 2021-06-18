@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Тестовое задание</title>
+</head>
+<body>
+	
+	<div class="body">
+		<div class="element" id="testElement">Элемент 1</div>
+		<div class="element" id="testElement2">Элемент 2</div>
+		<div class="element" id="testElement3">Элемент 3</div>
+	</div>
+
+<button  onclick="hideElementFirst(this)" id="btn">Скрыть 1</button>
+<button class="buttons" onclick="hideElementSecond(this)" id="btn2">Скрыть 2</button>
+<button class="buttons" onclick="deleteElementThird(this)" id="btn3">Удалить 3</button>
+
+<br> <a id="link" href="#" onclick="location.reload(); return false;">Обновить страницу</a>
+
+
+<script type="text/javascript">
+	
+// const element = document.getElementById('testElement');
+// element.style.visibility = 'hidden';
+
+function hideElementFirst(btn)
+{
+	console.log(btn)
+	const element = document.getElementById('testElement');
+	// const element2 = document.getElementById('testObject2')
+	let hideElement = element.style
+
+	if(hideElement.visibility !== 'hidden'){
+		hideElement.visibility = 'hidden';
+	} else {
+		hideElement.visibility = 'visible ';
+	}
+}
+
+function hideElementSecond(btn)
+{
+	console.log(btn2)
+	const element = document.getElementById('testElement2');
+	let hideElement = element.style
+
+	if(hideElement.display !== 'none'){
+		hideElement.display = 'none';
+	} else {
+		hideElement.display = 'block ';
+	}
+}
+
+function deleteElementThird(btn)
+{
+	console.log(btn3)	
+	const deleteButton = document.getElementById('testElement3')
+	deleteButton.remove()
+	btn.disabled = true;
+}
+
+</script>
+
+
+</body>
+</html>
