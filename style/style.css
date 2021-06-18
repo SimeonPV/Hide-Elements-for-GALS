@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+}
+
+.body {
+	margin-left: 127px;
+}
+
+.element {
+	color: red;
+	font-size: 72px;
+
+}
+
+#btn {
+	padding:20px 25px;
+	margin-left: 100px;
+}
+
+.buttons {
+	padding:20px 25px;
+	margin: 30px 0 20px 30px;
+}
+
+#link {
+	margin-left: 230px;
+}
